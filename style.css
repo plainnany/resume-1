@@ -1,0 +1,135 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #fafafa;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.layout{
+
+}
+/* aside */
+aside{
+    width: 250px;
+    height: 100vh;
+    float: left;
+    color: #fff;
+    position: relative;
+    background-color: #202021;
+    background: -webkit-linear-gradient(315deg, #607D8B 0, #212121 100%);
+    background: linear-gradient(135deg, #607D8B 0, #212121 100%);
+}
+aside h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 35px 0;
+
+}
+aside h1  a{
+    display: block;
+    
+}
+aside .nav{
+}
+aside .nav li{
+     /* background-color: #ccc;  */
+}
+aside .nav a{
+    display: block;
+    line-height: 40px;
+    margin: 10px 0;
+    padding-left: 34px;
+    font-size: 18px;
+}
+aside .nav a:hover{
+    background-color: #000;
+}
+aside .nav small{
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+aside .icon{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 71%;
+    display: flex;
+    justify-content: space-between;
+    
+    transform: translateX(-50%)
+
+}
+aside .icon li{
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+aside .icon a{
+    display: block;
+
+}
+aside .icon svg{
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+}
+/* portfolio */
+section{
+    margin-left: 250px;
+    height: 100vh;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+.content h2{
+     
+}
+
+
+/* aboutme  */
+.aboutme{
+    text-align: center;
+}
+.aboutme .head{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.aboutme .avatar{
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+.aboutme .avatar img{
+    width: 100%;
+    background: -webkit-linear-gradient(315deg, #607D8B 0, #212121 100%);
+    background: linear-gradient(135deg, #607D8B 0, #212121 100%);
+    border-radius: 50%;
+}
+.aboutme .description{
+    padding: 20px 0;
+}
