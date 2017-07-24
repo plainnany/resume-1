@@ -27,7 +27,7 @@ body{
 }
 /* aside */
 aside{
-    width: 250px;
+    max-width: 250px;
     height: 100vh;
     float: left;
     color: #fff;
