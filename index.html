@@ -6,83 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 <body>
     <div class="layout clearfix">
         <!-- aside -->
         <aside>
             <h1><a href="">nany's resume</a></h1>
-            <ul class="nav">
-                <li><a href="">个人 <small>About me</small></a></li>
-                <li><a href="">项目 <small>Portfolio</small></a></li>
-                <li><a href="">技能 <small>Technology stack</small></a></li>
-                <li><a href="">联系 <small>Contact</small> </a></li>
+            <ul id="nav" class="nav">
+                <li><a href="#">个人 <small>About me</small></a></li>
+                <li><a href="#">项目 <small>Portfolio</small></a></li>
+                <li><a href="#">技能 <small>Technology stack</small></a></li>
+                <li><a href="#">联系 <small>Contact</small> </a></li>
             </ul>
             <ul class="icon">
                 <li>
-                    <a href="">
+                    <a href="mailto:369058464@qq.com?subject=Job" target="_blank">
                         <svg><use xlink:href="#icon-ico04"></use></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="//plainnany.github.io" target="_blank">
                         <svg><use xlink:href="#icon-book"></use></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="//github.com/plainnany" target="_blank">
                         <svg><use xlink:href="#icon-github"></use></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="//plainnany.github.io" target="_blank">
                         <svg><use xlink:href="#icon-blog"></use></svg>
                     </a>
                 </li>
             </ul>
         </aside>
-       
-        <section class="content aboutme">
+        <section class="content aboutme active">
             <div class="head">
                 <a href="" class="avatar"><img src="images/avatar.png" alt=""></a>
                 <h1>李胜楠</h1>
             </div>
             <div class="description">
-                描述信息
+                <p>1993年</p>
+                <p>意向职位：前端开发</p>
+                <p>意向城市：杭州</p>
             </div>
             
         </section>
-        <section class="content portfolio active">
+        <section class="content portfolio">
             <h2>
                 Portfolio
             </h2>
             <div class="item">
-                <img src="" alt="">
+                <h3>英雄联盟官网仿制</h3>
+                <div class="picture">
+                    <a href=""><img src="images/1.png" alt=""></a>
+                </div>
+                
                 <div class="describe">
-                    ​	项目一 
+                    <p>
+                        使用 jQuery、Slides.js、自制的 Tab 组件，像素级精确还原英雄联盟官网</a>。
+                    </p>​
+                    
+                </div>
+                <div class="link clearfix">
+                    <a class="github" href="//plainnany.github.io/lol/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/lol" target="_blank">Github</a>
+                    
                 </div>
             </div>
             <div class="item">
-                <img src="" alt="">
+                <h3>云音乐页面</h3>
+                <a href=""><img src="images/2.png" alt=""></a>
                 <div class="describe">
-                    ​	项目2 
+                    ​ <p>使用媒体查询、Flex 布局、轮播组件制作的响应式页面 云音乐页面</p>
+                </div>
+                <div class="link clearfix">
+                    
+                    <a class="github" href="//plainnany.github.io/responsive/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/responsive" target="_blank">Github</a>
                 </div>
             </div>
             <div class="item">
-                <img src="" alt="">
+                <h3>企业网站</h3>
+                <a href=""><img src="images/4.png" alt=""></a>
                 <div class="describe">
-                    ​	项目3
+                    <p>使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板</p>
+                </div>
+                <div class="link clearfix">
+                    
+                    <a class="github" href="//plainnany.github.io/enterprise/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/enterprise" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>手机画板（Canvas 画图）</h3>
+                <a href=""><img src="images/5.png" alt=""></a>
+                <div class="describe">
+                    <p>使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板</p>
+                </div>
+                <div class="link clearfix">
+                    
+                    <a class="github" href="//plainnany.github.io/canvas/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/canvas" target="_blank">Github</a>
                 </div>
             </div>
         </section>
         <section class="content skill">
             <h2>Skill</h2>
-            skill
+            <div class="skill-content">
+                <ul>
+                    <li>熟练掌握<em>HTML(5)</em>、常用CSS(3)、静态页面制作，<em>像素级</em>还原设计稿，可以实现响应式以适应手机屏幕。</li>
+                    <li>熟练使用CSS 3 动画、<em>Flex 布局</em>、CSS 2 布局</li>
+                    <li>使用<em>动态 REM </em>适配所有手机屏幕</li>
+                    <li>熟练掌握原生Javascript，熟练使用 jQuery，了解 jQuery 常见 API，并可以利用JS/jQuery 封装常用插件。 </li>
+                    <li>了解<em> HTTP 协议</em>，知道 HTTP 请求、响应的定义，<em>浏览器渲染原理</em>，了解前端性能优化策略。</li>
+                    <li>了解<em>AJAX</em>，知道AJAX的请求过程</li>
+                    <li>追求良好的代码规范，具有良好的代码风格</li>
+                    <li>具有定期总结、书写博客<a href=""><em>技术博客（点击查看）</em></a>的习惯</li>
+                </ul>
+            
+            </div>
         </section>
         <section class="content contact">
-            联系我
+            <h2>contact</h2>
+            <p><svg><use xlink:href="#icon-ico04"></use></svg>plainnany@gmail.com</p>
+            <p><svg><use xlink:href="#icon-QQ"></use></svg>4989698999@qq.com</p>
+            <p><svg><use xlink:href="#icon-phone"></use></svg>18238801011</p>
+            
         </section>
     </div>
-    <script src="//at.alicdn.com/t/font_d67v4kmo8sbrzfr.js"></script>
+    <script src="//at.alicdn.com/t/font_e70jzzoemnimgqfr.js"></script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
