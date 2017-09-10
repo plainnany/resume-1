@@ -27,23 +27,47 @@ body{
 }
 /* aside */
 aside{
-    max-width: 250px;
+    width: 250px;
     height: 100vh;
-    float: left;
     color: #fff;
     position: fixed;
     background-color: #202021;
     background: -webkit-linear-gradient(315deg, #607D8B 0, #212121 100%);
     background: linear-gradient(135deg, #607D8B 0, #212121 100%);
+    position: fixed;
 }
+@media screen and (max-width: 768px){
+    aside {
+        bottom: auto;
+        right: 0;
+        width: 100%;
+        height: 50px;
+    }
+}
+
+/* @media (max-width: 700px){
+    
+    aside{
+        width: 100%;
+    }   
+   
+}
+@media (min-width: 701px){
+    aside{
+         max-width: 250px;
+    }
+   
+} */
+
 aside h1{
     font-size: 30px;
     text-align: center;
     margin: 35px 0;
-    animation: flip 1s;
+    /* animation: flip 1s; */
     
 
 }
+
 aside h1  a{
     display: block;
     
@@ -78,7 +102,7 @@ aside .icon{
     position: absolute;
     bottom: 25px;
     left: 50%;
-    width: 71%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     transform: translateX(-50%)
@@ -103,6 +127,46 @@ aside .icon li:hover{
     animation: rubberBand 1s;
     
 }
+@media screen and (max-width: 768px){
+    aside .aside-info{
+        display: none;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    aside h1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        padding: 0 34px;
+        
+        
+    }
+    aside .menu::after{
+        content: '☰';
+        display: block;
+        font-size: 28px;    
+        color: #fff;
+        text-align: right;
+        cursor: pointer;
+
+    }
+    aside.active .menu::after{
+        content: '×';
+        font-size: 40px;
+    }
+    aside.active .aside-info{
+        display: block;
+    }
+}
+
+
 
 svg{
     display: block;
@@ -113,6 +177,13 @@ section{
     margin-left: 250px;
     height: 100vh;
     text-align: center;
+}
+@media screen and (max-width: 768px){
+    section{
+        margin-left: 0;
+        padding-top: 50px;
+    }
+    
 }
 .layout .content{
     display: none;
@@ -181,9 +252,12 @@ section{
     background: #ccc;
 }
 .portfolio .item .describe{
-    padding: 20px;
+    padding: 0 20px 20px;
     text-align: left;
     border-bottom: 1px solid #ccc;
+}
+.portfolio .item .describe p{
+    padding-top: 20px;
 }
 .portfolio .item .link{
     padding: 20px;
@@ -209,10 +283,25 @@ section{
 
 }
 .skill-content{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+}
+@media screen and (max-width: 1240px){
+    .skill-content{
+        flex-direction: column;
+    
+    }
+}
+.skill-content ul{
+    flex-basis: calc(100% - 200px);
+    margin: 0 50px;
 
 }
 .skill-content li{
     padding: 10px 0;
+    list-style: disc;
 }
 .skill-content em{
     border: 1px solid #cfd8dc;
@@ -224,7 +313,7 @@ section{
 /* contact */
 section.contact p{
     text-align: left;
-    max-width:300px;
+    max-width:320px;
     margin: 0 auto;
     padding: 15px 0;
     font-size: 24px;
@@ -237,3 +326,9 @@ section.contact p svg{
 section.contact p:nth-child(2) svg{
     padding-top: 6px;
 }
+
+/* .netEase{
+    background-image: url(./images/netEase.png);
+    background-position: top;
+    background-size: cover;
+} */

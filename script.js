@@ -11,6 +11,11 @@ $(function(){
     }
     tab($('.nav'),$('.content'),'click')
 
+    $('aside .menu').on('click',function(){
+        console.log(1)
+        $('aside').toggleClass('active')
+    })
+
 })
 
 

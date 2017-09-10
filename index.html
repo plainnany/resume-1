@@ -12,36 +12,40 @@
     <div class="layout clearfix">
         <!-- aside -->
         <aside>
-            <h1><a href="">nany's resume</a></h1>
-            <ul id="nav" class="nav">
-                <li><a href="#">个人 <small>About me</small></a></li>
-                <li><a href="#">项目 <small>Portfolio</small></a></li>
-                <li><a href="#">技能 <small>Technology stack</small></a></li>
-                <li><a href="#">联系 <small>Contact</small> </a></li>
-            </ul>
-            <ul class="icon">
-                <li>
-                    <a href="mailto:369058464@qq.com?subject=Job" target="_blank">
-                        <svg><use xlink:href="#icon-ico04"></use></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="//plainnany.github.io" target="_blank">
-                        <svg><use xlink:href="#icon-book"></use></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="//github.com/plainnany" target="_blank">
-                        <svg><use xlink:href="#icon-github"></use></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="//plainnany.github.io" target="_blank">
-                        <svg><use xlink:href="#icon-blog"></use></svg>
-                    </a>
-                </li>
-            </ul>
+            <h1><a href="">nany's resume</a><div class="menu"></div></h1>
+            <div class="aside-info">
+                <ul id="nav" class="nav">
+                    <li><a href="#">个人 <small>About me</small></a></li>
+                    <li><a href="#">项目 <small>Portfolio</small></a></li>
+                    <li><a href="#">技能 <small>Technology stack</small></a></li>
+                    <li><a href="#">联系 <small>Contact</small> </a></li>
+                </ul>
+                <ul class="icon">
+                    <li>
+                        <a href="mailto:369058464@qq.com?subject=Job" target="_blank">
+                            <svg><use xlink:href="#icon-ico04"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//plainnany.github.io" target="_blank">
+                            <svg><use xlink:href="#icon-book"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//github.com/plainnany" target="_blank">
+                            <svg><use xlink:href="#icon-github"></use></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//plainnany.github.io" target="_blank">
+                            <svg><use xlink:href="#icon-blog"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </aside>
+        <!-- aside end -->
+        <!-- aboutme -->
         <section class="content aboutme active">
             <div class="head">
                 <a href="" class="avatar"><img src="images/avatar.png" alt=""></a>
@@ -54,33 +58,41 @@
             </div>
             
         </section>
+        <!-- aboutme end -->
+        <!-- portfolio -->
         <section class="content portfolio">
             <h2>
                 Portfolio
             </h2>
             <div class="item">
-                <h3>英雄联盟官网仿制</h3>
-                <div class="picture">
-                    <a href=""><img src="images/1.png" alt=""></a>
+                <h3>网易云音乐(手机端)</h3>
+                <div class="picture netEase">
+                    <a href=""><img src="images/netEase.jpg" alt=""></a>
                 </div>
                 
                 <div class="describe">
                     <p>
-                        使用 jQuery、Slides.js、自制的 Tab 组件，像素级精确还原英雄联盟官网</a>。
-                    </p>​
-                    
+                        手机端网易云音乐，具备播放、暂停、动态显示歌词的功能，使用leancloud作为数据库
+                        实现搜索歌曲并点击跳转到相应的歌曲页面，在不同Retina屏幕下实现1px物理像素，通过函数限流
+                        处理请求重复发送。用webpack进行打包，以应对复杂场景进行性能优化。
+                    </p>
+                    <p>技术栈：JQuery + BOM + MVC + Leancloud + postcss + uglifyjs + webpack + CDN
+                    </p>
+                    <p>由于部署的Leancloud是免费版，一般情况下不会超出最大请求次数，如果提示超出，请谅解</p>
                 </div>
                 <div class="link clearfix">
-                    <a class="github" href="//plainnany.github.io/lol/index.html" target="_blank">在线查看</a>
-                    <a class="github" href="//github.com/plainnany/lol" target="_blank">Github</a>
+                    <a class="github" href="https://plainnany.github.io/netEaseMusic/build/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="https://github.com/plainnany/netEaseMusic" target="_blank">Github</a>
                     
                 </div>
             </div>
             <div class="item">
-                <h3>云音乐页面</h3>
+                <h3>响应式页面Lazyload应用</h3>
                 <a href=""><img src="images/2.png" alt=""></a>
                 <div class="describe">
-                    ​ <p>使用媒体查询、Flex 布局、轮播组件制作的响应式页面 云音乐页面</p>
+                    
+                    <p>使用原生JS实现懒加载、自动加载、预加载、自动轮播、tab切换，使用媒体查询、Flex 布局构建响应式页面</p>
+                    <p>技术栈：原生JS+ npm + ES6 + git + http-server</p>
                 </div>
                 <div class="link clearfix">
                     
@@ -89,22 +101,38 @@
                 </div>
             </div>
             <div class="item">
-                <h3>企业网站</h3>
-                <a href=""><img src="images/4.png" alt=""></a>
+                <h3>各地实时天气预报</h3>
+                <a href=""><img src="images/weather.jpg" alt=""></a>
                 <div class="describe">
-                    <p>使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板</p>
+                    <p>使用jQuery Ajax、promise异步实时获取各个城市未来四天的天气预报</p>
+                    <p>技术栈：JQuery + CORS + ES6 + promise</p>
                 </div>
                 <div class="link clearfix">
                     
-                    <a class="github" href="//plainnany.github.io/enterprise/index.html" target="_blank">在线查看</a>
-                    <a class="github" href="//github.com/plainnany/enterprise" target="_blank">Github</a>
+                    <a class="github" href="//plainnany.github.io/weather/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/weather" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="item">
+                <h3>英雄联盟仿站</h3>
+                <a href=""><img src="images/lol.jpg" alt=""></a>
+                <div class="describe">
+                    <p>像素级还原LOL页面，使用jQuery、Slide.js、tab组件实现</p>
+                    <p></p>
+                    
+                </div>
+                <div class="link clearfix">
+                    
+                    <a class="github" href="//plainnany.github.io/lol/index.html" target="_blank">在线查看</a>
+                    <a class="github" href="//github.com/plainnany/lol" target="_blank">Github</a>
                 </div>
             </div>
             <div class="item">
                 <h3>手机画板（Canvas 画图）</h3>
-                <a href=""><img src="images/5.png" alt=""></a>
+                <a href=""><img src="images/canvas.jpg" alt=""></a>
                 <div class="describe">
                     <p>使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板</p>
+                    <p>技术栈：Canvas + 动态REM + JS</p>
                 </div>
                 <div class="link clearfix">
                     
@@ -113,29 +141,38 @@
                 </div>
             </div>
         </section>
+        <!-- portfolio end -->
+        <!-- skill -->
         <section class="content skill">
             <h2>Skill</h2>
             <div class="skill-content">
                 <ul>
-                    <li>熟练掌握<em>HTML(5)</em>、常用CSS(3)、静态页面制作，<em>像素级</em>还原设计稿，可以实现响应式以适应手机屏幕。</li>
-                    <li>熟练使用CSS 3 动画、<em>Flex 布局</em>、CSS 2 布局</li>
+                    <li>熟练掌握<em>HTML(5)</em>、常用CSS(3)、静态页面制作，<em>像素级</em>还原设计稿，可以实现响应式布局以适应手机屏幕。</li>
+                    <li>熟练使用CSS 2 布局、<em>Flex 布局</em>、CSS 3 动画</li>
                     <li>使用<em>动态 REM </em>适配所有手机屏幕</li>
-                    <li>熟练掌握原生Javascript，熟练使用 jQuery，了解 jQuery 常见 API，并可以利用JS/jQuery 封装常用插件。 </li>
-                    <li>了解<em> HTTP 协议</em>，知道 HTTP 请求、响应的定义，<em>浏览器渲染原理</em>，了解前端性能优化策略。</li>
+                    <li>
+                        熟练掌握原生Javascript，掌握一些重要概念如<em>原型</em>、<em>闭包</em>、<em>原型链</em>、<em>面向对象</em>、异步等。
+                        熟悉使用ES6部分语法。熟练使用 jQuery，了解 jQuery 常见 API，并可以利用JS/jQuery 封装常用插件。 </li>
+                </ul>
+                <ul>
+                    <li>了解<em> HTTP 协议</em>，知道 HTTP 请求、响应的定义，<em>了解浏览器渲染原理</em>，了解前端性能优化策略。</li>
                     <li>了解<em>AJAX</em>，知道AJAX的请求过程</li>
                     <li>追求良好的代码规范，具有良好的代码风格</li>
-                    <li>具有定期总结、书写博客<a href=""><em>技术博客（点击查看）</em></a>的习惯</li>
+                    <li>具有定期总结、书写博客<a href="//plainnany.github.io"><em>技术博客（点击查看）</em></a>的习惯</li>
                 </ul>
             
             </div>
         </section>
+        <!-- skill end -->
+        <!-- contact -->
         <section class="content contact">
             <h2>contact</h2>
-            <p><svg><use xlink:href="#icon-ico04"></use></svg>plainnany@gmail.com</p>
+            <p><svg><use xlink:href="#icon-ico04"></use></svg>plainnany@outlook.com</p>
             <p><svg><use xlink:href="#icon-QQ"></use></svg>4989698999@qq.com</p>
             <p><svg><use xlink:href="#icon-phone"></use></svg>18238801011</p>
             
         </section>
+        <!-- contact end -->
     </div>
     <script src="//at.alicdn.com/t/font_e70jzzoemnimgqfr.js"></script>
     <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
