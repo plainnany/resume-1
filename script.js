@@ -15,6 +15,12 @@ $(function(){
         console.log(1)
         $('aside').toggleClass('active')
     })
+    $('#nav').on('click','li',function(){
+        setTimeout(function(){
+            $('aside').removeClass('active')
+        },100)
+        
+    })
 
 })
 
