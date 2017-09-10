@@ -175,7 +175,7 @@ svg{
 }
 section{
     margin-left: 250px;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
 }
 @media screen and (max-width: 768px){
@@ -284,12 +284,16 @@ section{
 .skill-content{
     display: flex;
     justify-content: space-around;
-    text-align: left;
+    text-align: left; 
+    
+    
 
 }
 @media screen and (max-width: 1240px){
     .skill-content{
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: block;
+        text-align: left; 
     
     }
 }
