@@ -1,42 +1,59 @@
-# LSN的个人简历
+# 李胜楠的个人简历
 
 ## 个人信息
 
-杭州 | 前端工程师 | 
+郑州、杭州 | 前端工程师 | 
 
-手机：13812345678
+手机：18238801011
 
-QQ：1234567
+QQ：489698999
 
 邮箱：[plainnany@outlook.com](mailto:fangyinghang@foxmail.com)
 
-GitHub：github.com/plainnany
+GitHub：www.github.com/plainnany
 
 ## 项目经历
 
-1. 英雄联盟官网仿制
+1. 网易云音乐（手机端）
 
-   ​	使用 jQuery、Slides.js、自制的 Tab 组件，像素级精确还原[英雄联盟官网](https://plainnany.github.io/lol/index.html)。
+   ![](https://plainnany.github.io/resume-1/images/netEase.jpg)
 
-2. 云音乐页面
+   手机端网易云音乐，具备播放、暂停、动态显示歌词的功能，使用leancloud作为数据库 实现搜索歌曲并点击跳转到相应的歌曲页面，在不同Retina屏幕下实现1px物理像素，通过函数限流 处理请求重复发送。用webpack进行打包，以应对复杂场景进行性能优化。
 
-   ​	使用媒体查询、Flex 布局、轮播组件制作的响应式页面[ 云音乐页面](https://plainnany.github.io/responsive/index.html)
+   技术栈：JQuery + BOM + MVC + Leancloud + postcss + uglifyjs + webpack + CDN
 
-3. 一个手机画板（Canvas 画图）
+2. 响应式页面Lazyload应用
 
-   ​	使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的[手机画板](https://plainnany.github.io/canvas/index.html)
+   ![](https://plainnany.github.io/resume-1/images/2.png)
 
-4. 自制 DOM 库、BOM 库、jQuery 库
+   使用原生JS实现懒加载、自动加载、预加载、自动轮播、tab切换，使用媒体查询、Flex 布局构建响应式页面
 
-   ​        [dom组件](https://github.com/plainnany/dom)
+   技术栈：原生JS+ npm + ES6 + git + http-server
 
-5. 漂亮按钮
+3. 各地实时天气预报
 
-   ​        默认按钮样式修改[按钮组件](https://plainnany.github.io/button/index.html)
+   ![](https://plainnany.github.io/resume-1/images/weather.jpg)
 
-## 工作经历
+   使用jQuery Ajax、promise异步实时获取各个城市未来四天的天气预报
 
-lalalala
+   技术栈：JQuery + CORS + ES6 + promise
+
+4. 手机画板（Canvas 画图）
+
+   ![img](https://plainnany.github.io/resume-1/images/canvas.jpg)
+
+   使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板。（请在手机端查看）
+
+   技术栈：Canvas + 动态REM + JS
+
+5. 英雄联盟仿站
+
+   ![img](https://plainnany.github.io/resume-1/images/lol.jpg)
+
+   像素级还原LOL页面，使用jQuery、Slide.js、tab组件实现
+
+   ​
+
 
 ## 我的技能
 
