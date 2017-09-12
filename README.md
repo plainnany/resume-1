@@ -6,19 +6,11 @@
 
 学历：本科
 
-邮箱：[plainnany@outlook.com](mailto:fangyinghang@foxmail.com)
-
-GitHub：www.github.com/plainnany
-
-技术博客：https://plainnany.github.io
-
 期望薪资：8k-10k
 
 期望城市：郑州、杭州
 
-手机：18238801011
-
-QQ：489698999
+技术博客：https://plainnany.github.io
 
 ## 项目经历
 
@@ -46,7 +38,9 @@ QQ：489698999
 
    ![](https://plainnany.github.io/resume-1/images/weather.jpg)
 
-   使用jQuery Ajax、promise异步实时获取各个城市未来四天的天气预报
+   使用jQuery Ajax、promise异步实时获取各个城市未来四天的天气预报。使用CORS实现天气资源的数据请求，包括实时温度、天气情况、以及对应的天气图片信息。
+
+   由于使用的是免费的天气API，可能会出现天气暂时访问不到的情况，如有遇到，请谅解。
 
    技术栈：JQuery + CORS + ES6 + promise
 
@@ -56,7 +50,7 @@ QQ：489698999
 
    ![img](https://plainnany.github.io/resume-1/images/canvas.jpg)
 
-   使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）制作的手机画板。（请在手机端查看）
+   使用原生 JS，借助 Canvas API 和动态 REM 方案（flexible.js）以及svg iconfont制作的手机画板。包含橡皮擦、一键擦除、保存图片的功能，期间主要难点在于如何确定上一个触点的位置以及消除画笔锯齿，所有功能基本上由canvas原生API实现。
 
    技术栈：Canvas + 动态REM + JS
 
@@ -66,7 +60,7 @@ QQ：489698999
 
    ![img](https://plainnany.github.io/resume-1/images/lol.jpg)
 
-   像素级还原LOL页面，使用jQuery、Slide.js、tab组件实现
+   像素级还原LOL页面，实现复杂页面的tab切换，dialog视频弹窗，以及复杂css样式的实现。
 
    [点击查看](https://plainnany.github.io/lol/index.html)
 
@@ -99,4 +93,16 @@ QQ：489698999
   ​
 
 ## 自我描述
+
+爱前端的妹子~~
+
+## 联系方式
+
+手机：18238801011
+
+QQ：489698999
+
+邮箱：[plainnany@outlook.com](mailto:plainnany@outlook.com)
+
+GitHub：www.github.com/plainnany
 
