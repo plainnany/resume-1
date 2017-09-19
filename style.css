@@ -232,6 +232,10 @@ section{
     
 }
 /* portfolio */
+.portfolio{
+    /* background: url(./images/bg4.jpg) no-repeat;
+    background-size: cover; */
+}
 .portfolio .item{
     max-width: 600px;
     margin: 40px auto;
@@ -314,38 +318,66 @@ section{
 
 /*  skill */
 .skill{
+    background: url(./images/bg4.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+
 
 }
 .skill-content{
     display: flex;
     justify-content: space-around;
     text-align: left; 
+    position: relative;
+    padding: 20px 0;
+}
+.skill-content::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./images/bg4.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(16px);
     
-    
-
 }
 @media screen and (max-width: 1240px){
+    .skill h2{
+        margin-bottom: 10px;
+    }
     .skill-content{
         /* flex-direction: column; */
         display: block;
         text-align: left; 
+        padding: 0;
     
     }
+    
 }
 .skill-content ul{
     flex-basis: calc(100% - 200px);
     margin: 0 50px;
+    position: relative;
+    z-index: 3;
 
 }
 .skill-content li{
     padding: 10px 0;
     list-style: disc;
 }
+@media screen and (max-width: 1240px){
+    .skill-content li{
+        padding: 8px 0;
+    }
+}
 .skill-content em{
-    border: 1px solid #cfd8dc;
     font-style: normal;
-    background: #EEEEEE;
-    color: #2196f3;
+    color: #29DB51;
+    font-weight: bold;
+    font-size: 18px;
     
 }
 /* contact */
