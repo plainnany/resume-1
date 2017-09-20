@@ -149,6 +149,21 @@ aside .icon li:hover{
     
     
 }
+.aside-info .download{
+    margin-top: 170px;
+    text-align: center;
+
+}
+.aside-info .download a{
+    display: inline-block;
+    border: 1px solid rgb(0,204,108);
+    padding: 6px 15px;
+    border-radius: 4px;
+    color: rgb(0,204,108); 
+}
+.aside-info .download a:hover{
+    animation: bounce 1s;
+}
 @media screen and (max-width: 768px){
     aside .aside-info{
         display: none;
