@@ -111,10 +111,30 @@ aside .icon{
 }
 aside .icon li{
     padding: 5px;
-    background-color: rgba(238, 238, 238, 0.39);
     border-radius: 50%;
     transition: .8s;
 
+}
+aside .icon li:nth-child(1){
+    background: rgb(0,171,108);
+}
+aside .icon li:nth-child(1) svg{
+    fill: #fff;
+}
+aside .icon li:nth-child(2){
+    background: rgb(88,70,19);
+}
+aside .icon li:nth-child(2) svg{
+    fill: darkgray;
+}
+aside .icon li:nth-child(3){
+    background-color: rgba(238, 238, 238, 0.39);
+}
+aside .icon li:nth-child(4){
+    background: rgb(150, 14, 14);
+}
+aside .icon li:nth-child(4) svg{
+    fill: #ccc;
 }
 aside .icon a{
     display: block;
@@ -124,8 +144,9 @@ aside .icon a svg{
     
 }
 aside .icon li:hover{
-    background-color: #eee;
+    /* background-color: #eee; */
     animation: rubberBand 1s;
+    
     
 }
 @media screen and (max-width: 768px){
