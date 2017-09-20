@@ -162,7 +162,7 @@ aside .icon li:hover{
     color: rgb(0,204,108); 
 }
 .aside-info .download a:hover{
-    animation: bounce 1s;
+    animation: jello 1s;
 }
 @media screen and (max-width: 768px){
     aside .aside-info{
