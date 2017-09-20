@@ -35,6 +35,7 @@ aside{
     background: -webkit-linear-gradient(315deg, #607D8B 0, #212121 100%);
     background: linear-gradient(135deg, #607D8B 0, #212121 100%);
     position: fixed;
+    z-index: 10;
 }
 @media screen and (max-width: 768px){
     aside {
@@ -267,15 +268,28 @@ section{
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
+}
+@media screen and (max-width: 620px){
+    .portfolio .item .link{
+        padding: 14px;
+    }
 }
 .portfolio .item .link-icon svg{
     display: inline-block;
     width: 28px;
     height: 28px;
-    margin-right: 15px;
+    margin-right: 1em;
     border-radius: 50%;
     cursor: pointer;
+}
+@media screen and (max-width: 640px){
+    .portfolio .item .link-icon svg{
+        width: 24px;
+        height: 24px;
+        margin-right: .1em;
+    }
 }
 .icon-weather{
     fill: darkviolet;
@@ -303,7 +317,6 @@ section{
 }
 .github{
     float: right;
-    max-width: 80px;
     margin-right: 10px;
     padding: 0 4px;
     font-size: 14px;
@@ -311,6 +324,13 @@ section{
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: ease .5s;
+}
+@media screen and (max-width: 640px){
+    .github{
+        margin-right: .1em;
+    }
+
+   
 }
 .github:hover{
     background-color: #ddd;
@@ -320,7 +340,7 @@ section{
 .skill{
     background: url(./images/bg4.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
 
 
@@ -331,6 +351,8 @@ section{
     text-align: left; 
     position: relative;
     padding: 20px 0;
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 30px, rgba(0, 0, 0, 0.53) 0px 0px 10px;
 }
 .skill-content::after{
     content: '';
